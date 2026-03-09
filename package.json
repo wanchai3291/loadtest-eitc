@@ -1,0 +1,24 @@
+{
+  "name": "loadtest-eitc",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/wanchai3291/loadtest-eitc#readme",
+  "bugs": {
+    "url": "https://github.com/wanchai3291/loadtest-eitc/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanchai3291/loadtest-eitc.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "kafkajs": "^2.2.4"
+  }
+}
