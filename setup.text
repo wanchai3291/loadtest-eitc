@@ -1,0 +1,16 @@
+----- run -----
+
+chmod +x run.sh
+nohup ./run.sh &
+echo $! > run.pid
+
+------- ดู / หยุด -----
+
+# ดู progress
+tail -f logs/schedule.log
+
+# ดู summary รอบล่าสุด (เช่น รอบที่ 3)
+cat logs/run_3.log
+
+# หยุด
+kill $(cat run.pid)
