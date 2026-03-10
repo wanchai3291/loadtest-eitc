@@ -153,7 +153,6 @@ function buildMessage() {
     const tickStart = Date.now();
     const elapsedSec = (Date.now() - start) / 1000;
 
-    // คำนวณ throughput ปัจจุบันตาม ramp up
     const progress = Math.min(elapsedSec / RAMP_UP_SEC, 1);
     const currentThroughput = Math.floor(
       MIN_THROUGHPUT + (MAX_THROUGHPUT - MIN_THROUGHPUT) * progress
